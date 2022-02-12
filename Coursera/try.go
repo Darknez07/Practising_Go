@@ -16,6 +16,7 @@ func main() {
 		A
 	)
 	var num int
+	fmt.Printf("Enter marks (0-100): ")
 	_, err := fmt.Scanf("%d", &num)
 	if err != nil {
 		log.Fatal(err)
@@ -46,5 +47,13 @@ func main() {
 	var x [5]int = [5]int {6,7,2,1,6}
 	for i, v :=range x{
 		fmt.Println("Dekho jaara",i, "par haii",v)
+	}
+	// Using slices
+	// So if we don't use ... or length
+	// By default this will be slice
+	arr := [...]string{"abc","def","fck","und","prk","njk"}
+	s1 := arr[1:3]
+	for i, v :=range s1{
+		fmt.Println("Dekho ",i," par kya mila ",v)
 	}
 }
