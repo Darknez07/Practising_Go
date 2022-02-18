@@ -56,7 +56,6 @@ func main() {
 	for i, v := range s1 {
 		fmt.Println("Dekho ", i, " par kya mila ", v)
 	}
-
 	// Hash table
 	// Key -> value pair
 	// Key has to be unique
